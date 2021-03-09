@@ -14,11 +14,16 @@ function calculate() {
     let amountTotalAlcoholicDrink = (alcoholicBeveragePerPerson(amountDuration) * amountAdult);
     let amountTotalnonAlcoholicDrink = (nonAlcoholicBeveragePerPerson(amountDuration) * amountAdult + (nonAlcoholicBeveragePerPerson(amountDuration) / 2 * amountChildren));
 
-    result.innerHTML = `<p>${amountTotalBeef}g of the beef</p>`;
-    result.innerHTML += `<p>${amountTotalAlcoholicDrink}ml of the alcoholic drink</p>`;
-    result.innerHTML += `<p>${amountTotalnonAlcoholicDrink}ml of the non alcoholic drink's</p>`;
+    if (amountTotalBeef && amountTotalAlcoholicDrink && amountTotalnonAlcoholicDrink != 0) {
+        result.innerHTML = `<p>${amountTotalBeef / 1000}kg of the beef</p>`;
+        result.innerHTML += `<p>${Math.ceil(amountTotalAlcoholicDrink / 355)} Alcoholic beverage cans</p>`;
+        result.innerHTML += `<p>${Math.ceil(amountTotalnonAlcoholicDrink / 2000)} Pet's(2-liters) of the non alcoholic drink's</p>`;
+    } else {
+        result.innerHTML = `<p>No value was selected, select the correct amount for us to estimate ;)</p>`;
+    }
 
 }
+
 
 function amountOfMeatPerPerson(duration) {
 
