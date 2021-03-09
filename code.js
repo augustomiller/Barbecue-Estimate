@@ -2,7 +2,7 @@ let inputAdults = document.getElementById("adults");
 let inputChildren = document.getElementById("children");
 let inputDuration = document.getElementById("duration");
 
-let result = document.getElementsByClassName("result");
+let result = document.getElementById("result");
 
 function calculate() {
 
