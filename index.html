@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Barbecue Estimate</title>
+</head>
+
+<body>
+    <header>
+        <h1>Barbecue Estimate</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Estimate the cost of the barbecue</h2>
+            <fieldset class="fieldMain">
+                <legend id="legendTitle"></legend>
+
+                <fieldset class="fieldChildren">
+                    <legend>Number of adults</legend>
+                    <label for="adults"></label>
+                    <input id="adults" name="adults" type="number">
+                </fieldset>
+
+                <fieldset class="fieldChildren">
+                    <legend>Number of Children</legend>
+                    <label for="children"></label>
+                    <input id="children" name="children" type="number">
+                </fieldset>
+
+                <fieldset class="fieldChildren">
+                    <legend>Duration</legend>
+                    <label for="duration"></label>
+                    <input id="duration" name="duration" type="number">
+                </fieldset>
+
+                <button onclick="calculate()">Estimate</button>
+
+                <section id="result"></section>
+            </fieldset>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./code.js"></script>
+</body>
+
+</html>
