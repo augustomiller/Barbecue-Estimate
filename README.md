@@ -8,6 +8,8 @@
 - [4. General considerations](#4-general-considerations)
 
 ---
+![logo](https://user-images.githubusercontent.com/990877/110651420-30e20e80-819a-11eb-987f-d589cd7f0ef3.png)
+
 ![ProjectBurbecueEstimate](https://user-images.githubusercontent.com/990877/110571311-23933880-8136-11eb-9841-2e27625d828c.png)
 
 
